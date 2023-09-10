@@ -1,0 +1,11 @@
+import json
+
+# define the JSON data
+json_data = '[{"lat": 56.78234, "lon": 23.78234}, {"lat": 56.78234, "lon": 23.78234}]'
+
+# parse the JSON data
+data = json.loads(json_data)
+
+# loop through each item and print the latitude and longitude
+for item in data:
+    print(f"Latitude: {item['lat']}, Longitude: {item['lon']}")
